@@ -1,37 +1,131 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DeskCA | Software Development</title>
-  <meta name="description" content="Software development and IT services in Canada.">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1220;
-      color: #f8fafc;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    h1 { color: #38bdf8; font-size: 48px; }
-    p { color: #cbd5e1; line-height: 1.8; }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #0284c7;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Software development, IT support, computer networking, and small-business technology services in Ontario, Canada.">
+  <title>Amin Reza Feizi | Software & IT Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>DeskCA</h1>
-  <h2>Software Development & IT Services</h2>
-  <p>Custom software, web development, C#, ASP.NET and PHP.</p>
-  <a href="mailto:hello@deskca.com">Contact Us</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Amin Reza Feizi home"><span class="brand-mark" aria-hidden="true">✦</span><span>Amin Reza Feizi</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#services">Software</a>
+        <a href="#networking">IT & Networking</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-cta">Let’s Talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SOFTWARE · IT SUPPORT · NETWORKING</p>
+        <h1>Reliable IT and software<br><span class="gradient-text">solutions for your business.</span></h1>
+        <p class="hero-intro">I help small businesses with custom software, computer networking, and practical IT support across Ontario, Canada.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#projects">View my work</a>
+        </div>
+        <div class="hero-proof"><span class="proof-line"></span><p>PHP · ASP.NET · C# · IT Support · Networking</p></div>
+      </div>
+      <div class="code-card" aria-label="Illustrative code card">
+        <div class="code-top"><div class="window-dots"><i></i><i></i><i></i></div><span>solution.cs</span><span class="code-badge">C#</span></div>
+        <pre><code><span class="code-muted">01</span>  <span class="code-purple">public class</span> <span class="code-blue">Solution</span>
+<span class="code-muted">02</span>  {
+<span class="code-muted">03</span>      <span class="code-purple">public string</span> Goal { <span class="code-purple">get</span>; }
+<span class="code-muted">04</span>
+<span class="code-muted">05</span>      <span class="code-purple">public</span> Solution(<span class="code-blue">string</span> goal)
+<span class="code-muted">06</span>      {
+<span class="code-muted">07</span>          Goal = goal;
+<span class="code-muted">08</span>      }
+<span class="code-muted">09</span>  }</code></pre>
+        <div class="code-bottom"><span><span class="status-dot"></span> Built around your needs</span><span>01 / 01</span></div>
+        <div class="floating-chip chip-one"><span class="chip-icon">⌘</span><span><strong>Custom-built</strong><small>Made for your workflow</small></span></div>
+        <div class="floating-chip chip-two"><span class="chip-icon chip-icon-green">✓</span><span><strong>Responsive</strong><small>Works across devices</small></span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-inner"><span>SOFTWARE & TECHNOLOGY SERVICES</span><div class="tech-list"><span>PHP</span><b>·</b><span>ASP.NET</span><b>·</b><span>C#</span><b>·</b><span>IT Support</span><b>·</b><span>Networking</span></div></div>
+    </section>
+
+    <section class="section container" id="services">
+      <div class="section-heading">
+        <div><p class="eyebrow">WHAT I CAN HELP WITH</p><h2>Services that solve<br><span class="muted-heading">real business problems.</span></h2></div>
+        <p class="section-summary">From custom software to reliable office networks, I help small businesses solve practical technology problems with clear, maintainable solutions.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">&lt;/&gt;</div><p class="card-number">01 / WEB</p><h3>PHP Web Development</h3><p>Business websites, server-side features, database-driven pages, maintenance and improvements to existing PHP projects.</p><ul><li>Dynamic websites</li><li>Forms and integrations</li><li>MySQL database features</li></ul></article>
+        <article class="service-card service-featured"><div class="service-icon">C#</div><p class="card-number">02 / APPLICATIONS</p><h3>C# & .NET Development</h3><p>Custom Windows or web application development to help simplify business workflows and reduce repetitive tasks.</p><ul><li>C# application features</li><li>ASP.NET web applications</li><li>SQL Server integration</li></ul></article>
+        <article class="service-card"><div class="service-icon">↗</div><p class="card-number">03 / SUPPORT</p><h3>Software Support</h3><p>Practical help improving existing software, investigating issues and planning the next development step.</p><ul><li>Bug investigation</li><li>Feature enhancements</li><li>Technical consultation</li></ul></article>
+      </div>
+    </section>
+
+
+    <section class="section network-section" id="networking">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">IT & COMPUTER NETWORKING</p><h2>Reliable technology<br><span class="muted-heading">for everyday business.</span></h2></div>
+          <p class="section-summary">Practical IT and networking support for small businesses in Ontario. Service scope is agreed in advance, and security-sensitive work is handled within appropriate qualifications and access.</p>
+        </div>
+        <div class="network-grid">
+          <article class="network-card"><span class="network-icon">⌘</span><p class="card-number">01 / SUPPORT</p><h3>IT Support & Troubleshooting</h3><p>Help with everyday computer issues, software setup, connectivity problems, updates and basic technical troubleshooting.</p></article>
+          <article class="network-card"><span class="network-icon">⌁</span><p class="card-number">02 / NETWORKS</p><h3>Network Setup & Management</h3><p>Small-office Wi-Fi setup, router configuration, device connectivity, network documentation and routine maintenance.</p></article>
+          <article class="network-card"><span class="network-icon">盾</span><p class="card-number">03 / SECURITY</p><h3>Basic Cybersecurity</h3><p>Practical security hygiene reviews, secure configuration guidance, update checks, account protection and backup recommendations.</p></article>
+          <article class="network-card"><span class="network-icon">☁</span><p class="card-number">04 / CLOUD</p><h3>Cloud Setup & Connectivity</h3><p>Help planning basic cloud connectivity, account setup and small-business infrastructure, based on project requirements.</p></article>
+          <article class="network-card"><span class="network-icon">↻</span><p class="card-number">05 / ONGOING CARE</p><h3>Ongoing IT Support</h3><p>Options for scheduled support, routine network checks and maintenance arrangements for small businesses.</p></article>
+          <article class="network-card"><span class="network-icon">⌗</span><p class="card-number">06 / INSTALLATION</p><h3>Network Installation</h3><p>Planning office network layouts, connecting equipment and coordinating structured cabling or installation work where appropriate.</p></article>
+          <article class="network-card"><span class="network-icon">◎</span><p class="card-number">07 / CONSULTING</p><h3>Remote IT Consulting</h3><p>Remote guidance to review business IT needs, troubleshoot issues and identify practical infrastructure improvements.</p></article>
+        </div>
+        <p class="project-note network-note"><span aria-hidden="true">ⓘ</span> Service availability depends on project scope, equipment, access and qualifications. Advanced penetration testing, regulated cabling and specialist cloud deployments are not implied by this general service list.</p>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Technology should make<br><span class="gradient-text">work simpler.</span></h2></div>
+        <div class="about-copy"><p>I’m Amin, an IT professional focused on software development and practical technology support for real business needs.</p><p>I value clear communication, thoughtful problem-solving and solutions that are easier to use and maintain. My services span PHP, ASP.NET, C#, database technologies, basic IT support and small-business networking. I’m happy to discuss your goals before recommending an approach.</p><div class="about-tags"><span>Problem-solving</span><span>Business-focused</span><span>Maintainable code</span></div></div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED WORK</p><h2>Projects & <span class="muted-heading">ideas.</span></h2></div>
+        <p class="section-summary">Selected concepts and portfolio examples. Project descriptions should be updated to reflect completed work and current status.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-visual visual-scale"><div class="mini-window"><div class="mini-window-bar"><i></i><i></i><i></i><span>ReadScale</span></div><div class="mini-dashboard"><div class="mini-side"></div><div class="mini-content"><span></span><span></span><div class="mini-chart"></div></div></div></div><span class="visual-label">BUSINESS SOFTWARE</span></div><div class="project-info"><div><p class="card-number">01 / CONCEPT</p><h3>ReadScale</h3></div><span class="project-arrow">↗</span><p>A weighbridge software concept focused on recording weigh-in/out activity and organizing operational data.</p><div class="project-tags"><span>C#</span><span>SQL Server</span><span>Business workflow</span></div></div></article>
+        <article class="project-card"><div class="project-visual visual-web"><div class="browser-mock"><div class="browser-top"><i></i><i></i><i></i></div><div class="browser-body"><div class="browser-line"></div><div class="browser-line short"></div><div class="browser-button"></div><div class="browser-blocks"><i></i><i></i><i></i></div></div></div><span class="visual-label">WEB DEVELOPMENT</span></div><div class="project-info"><div><p class="card-number">02 / PORTFOLIO</p><h3>Business Websites</h3></div><span class="project-arrow">↗</span><p>Responsive websites designed to communicate services clearly and help customers get in touch.</p><div class="project-tags"><span>PHP</span><span>HTML/CSS</span><span>JavaScript</span></div></div></article>
+      </div>
+      <p class="project-note"><span aria-hidden="true">ⓘ</span> These are portfolio placeholders. Update descriptions and links to accurately reflect completed work before presenting them as client projects.</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy"><p class="eyebrow">LET’S WORK TOGETHER</p><h2>Let’s work<br><span class="gradient-text">together.</span></h2><p>Tell me what you’re trying to build, connect or improve. Share a few details and I’ll get back to you by email.</p><div class="contact-direct"><span class="direct-icon">✉</span><div><small>EMAIL</small><a id="email-link" href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></div></div><div class="contact-direct"><span class="direct-icon">⌘</span><div><small>GITHUB</small><a id="github-link" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer">github.com/YOUR_GITHUB_USERNAME</a></div></div></div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-heading"><h3>Tell me about your project</h3><p>Fields marked with * are required.</p></div>
+          <label for="name">Your name <span>*</span></label><input id="name" name="name" autocomplete="name" required placeholder="Jane Smith">
+          <label for="email">Email address <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@company.com">
+          <label for="service">What do you need help with?</label><select id="service" name="service"><option value="Website development">Website development</option><option value="C# / .NET application">C# / .NET application</option><option value="PHP development">PHP development</option><option value="Bug fix or improvement">Bug fix or improvement</option><option value="IT support and troubleshooting">IT support and troubleshooting</option><option value="Network setup and maintenance">Network setup and maintenance</option><option value="Basic cybersecurity guidance">Basic cybersecurity guidance</option><option value="Cloud setup or IT consulting">Cloud setup or IT consulting</option><option value="Other">Other</option></select>
+          <label for="message">Project details <span>*</span></label><textarea id="message" name="message" rows="4" required placeholder="A short description of your project, goals and timeline..."></textarea>
+          <button class="button button-primary form-submit" type="submit">Prepare email <span aria-hidden="true">↗</span></button>
+          <p class="form-hint">This static GitHub Pages form opens your email app. It does not send or store data on this website.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">✦</span><span>Amin Reza Feizi</span></a><p>Software · IT Support · Network Solutions</p><span>© <span id="year"></span> Amin Reza Feizi</span></div></footer>
 </body>
 </html>
