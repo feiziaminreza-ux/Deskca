@@ -1,1 +1,21 @@
 
+backend:
+  name: github
+  repo: feiziaminreza-ux/Deskca
+  branch: main
+
+media_folder: "images"
+public_folder: "/Deskca/images"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
